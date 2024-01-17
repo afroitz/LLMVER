@@ -1,5 +1,5 @@
 # Results
-Dieses Verzeichnis enthält die Ergebnisse des Experiments, d.h. die Antworten des Sprachmodells. Die Ergebnisse der Evaluation sind über das Notebook `evaluate` in `notebooks` zu finden.
+Dieses Verzeichnis enthält die Ergebnisse des Experiments, d.h. die Antworten des Sprachmodells und die Ergebnisse der Evaluation.
 
 ## annotated_dataset.csv
 Dieses Dokument enthält die annotierten Daten. Die Daten sind wie folgt aufgebaut:
@@ -41,3 +41,6 @@ Dieses Dokument enthält die annotierten Daten. Die Daten sind wie folgt aufgeba
 - evidence_correct_medium: Ob die evidence_correctness _CORRECT_ oder _SUPERSET_ ist.
 
 - evidence_correct_relaxed: Ob die evidence_correctness _CORRECT_, _SUPERSET_, _SUBSET_ oder _OVERLAP_ ist.
+
+## results.md
+Dieses Dokument enthält die Ergebnisse der Evaluation.
