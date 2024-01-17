@@ -1,0 +1,33 @@
+You are an annotator in an annotation task for claim verification based on textual evidence, not based on previous/additional knowledge.
+You will be given a claim and an evidence text. The claim is a simple factoid sentence which can be true or false. The evidence text is a numbered list of the sentences of the introductory section of a related Wikipedia page. It may or may not contain supporting or refuting evidence. The purpose of the task is to identify evidence for or against the claim from within the evidence text.
+Supporting/refuting evidence is defined like this for the purpose of this task: If I was given only the selected sentences, do I have stronger reason to believe claim is true (supported) or stronger reason to believe the claim is false (refuted).
+Please answer in the following way:
+
+LABEL (SUPPORTED if the claim is supported by the evidence, REFUTED if the claim is refuted by the evidence or NOT ENOUGH INFO if there is no sufficient evidence)
+Comma separated number(s) of the sentence(s) that are required to come to this decision
+
+Stick to this format, do not answer with anything else. If a single sentence is enough evidence on its own, giving one number is enough. If multiple are needed, multiple numbers should be given. Example output would be:
+
+SUPPORTED
+1, 3 
+
+or:
+
+REFUTED
+5
+
+---
+YOUR TASK IS:
+
+CLAIM: Gregor Clegane is the younger brother of Sandor Clegane.
+1: Ser Gregor Clegane , nicknamed The Mountain , is a fictional character in the A Song of Ice and Fire series of fantasy novels by American author George R. R. Martin , and its television adaptation Game of Thrones .
+2: He is a retainer to House Lannister .
+3: An enormous man , he is well known for his size , prowess in battle and cruelty .
+4: Introduced in 1996 's A Game of Thrones , Gregor is the older brother of Sandor Clegane , from the fictional kingdom of Westeros .
+5: He subsequently appeared in Martin 's A Clash of Kings -LRB- 1998 -RRB- , A Storm of Swords -LRB- 2000 -RRB- and in A Dance with Dragons -LRB- 2011 -RRB- as Ser Robert Strong .
+6: Ser Gregor Clegane is a huge knight and the elder brother of Sandor Clegane .
+7: Called `` The Mountain That Rides '' , he is known for his incredibly cruel nature and uncontrollable temper .
+8: His size and strength make him a fearsome warrior , and he has earned a reputation for cruelty and brutality .
+9: He is able to wield a two-handed sword one handed .
+10: When they were children , Gregor shoved Sandor 's face into a brazier , gruesomely scarring him .
+11: Gregor Clegane is portrayed by Conan Stevens in season one , by Ian Whyte in season two , and by Hafþór Júlíus Björnsson in seasons four , five , and six in the HBO television adaptation .

@@ -1,0 +1,42 @@
+You are an annotator in an annotation task for claim verification based on textual evidence, not based on previous/additional knowledge.
+You will be given a claim and an evidence text. The claim is a simple factoid sentence which can be true or false. The evidence text is a numbered list of the sentences of the introductory section of a related Wikipedia page. It may or may not contain supporting or refuting evidence. The purpose of the task is to identify evidence for or against the claim from within the evidence text.
+Supporting/refuting evidence is defined like this for the purpose of this task: If I was given only the selected sentences, do I have stronger reason to believe claim is true (supported) or stronger reason to believe the claim is false (refuted).
+Please answer in the following way:
+
+LABEL (SUPPORTED if the claim is supported by the evidence, REFUTED if the claim is refuted by the evidence or NOT ENOUGH INFO if there is no sufficient evidence)
+Comma separated number(s) of the sentence(s) that are required to come to this decision
+
+Stick to this format, do not answer with anything else. If a single sentence is enough evidence on its own, giving one number is enough. If multiple are needed, multiple numbers should be given. Example output would be:
+
+SUPPORTED
+1, 3 
+
+or:
+
+REFUTED
+5
+
+---
+YOUR TASK IS:
+
+CLAIM: All the Lovers reached the top ten in Belgium.
+1: `` All the Lovers '' is a song recorded by Australian recording artist Kylie Minogue for her eleventh studio album , Aphrodite -LRB- 2010 -RRB- .
+2: One of the last songs to be recorded for the album , `` All the Lovers '' was written by Jim Eliot and Mima Stilwell and produced by the former .
+3: Stuart Price , the executive producer of Aphrodite , was responsible for additional production and mixing of the song .
+4: Minogue felt `` All the Lovers '' summarised the `` euphoria '' of the album perfectly and chose it to be the lead single from Aphrodite .
+5: It was then globally released by Parlophone as a CD single and digital download on 11 June 2010 .
+6: `` All the Lovers '' is a midtempo disco song with influences of electropop music .
+7: The lyrics of the song serve as an invitation to the dance floor and an assertion that Minogue 's past relationships do not `` compare '' to the one she shares with her present lover .
+8: Upon its release , `` All the Lovers '' garnered critical acclaim and was commended for its chorus and production .
+9: Many critics found it similar to Minogue 's 2004 single `` I Believe in You '' .
+10: Compared to the lead singles from Minogue 's previous albums , `` All the Lovers '' underperformed in Australia and missed peaking inside the top ten of the Australian Singles Chart .
+11: However , it was a commercial success in Europe , reaching the top ten in numerous countries including Austria , Belgium , France , Italy , Spain and Switzerland and the United Kingdom .
+12: In the latter country , `` All the Lovers '' peaked at number three on the UK Singles Chart .
+13: A club hit in the United States , it topped the Billboard Hot Dance Club Songs chart .
+14: `` All the Lovers '' was certified gold in Australia , Italy , and the United Kingdom .
+15: An accompanying music video for `` All the Lovers '' was filmed in Downtown Los Angeles by Joseph Kahn , and features Minogue singing the song from atop a pyramid of underwear-clad couples .
+16: Critical reception towards the video was favourable , with many critics enjoying its concept and imagery .
+17: The music video was banned in several Asian countries due to its sexual nature .
+18: For additional promotion , Minogue performed the song on various television shows , such as Germany 's Next Topmodel and Alan Carr : Chatty Man .
+19: It was included on the set list of her Aphrodite : Les Folies , Kiss Me Once , and 2015 Summer tours , as well as on the Kylie Christmas concert series .
+20: An orchestral version of the song was featured on the track list of Minogue 's 2012 compilation album The Abbey Road Sessions .

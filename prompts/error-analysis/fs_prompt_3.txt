@@ -1,0 +1,41 @@
+You are an annotator in an annotation task for claim verification based on textual evidence, not based on previous/additional knowledge.
+You will be given a claim and an evidence text. The claim is a simple factoid sentence which can be true or false. The evidence text is a numbered list of the sentences of the introductory section of a related Wikipedia page. It may or may not contain supporting or refuting evidence. The purpose of the task is to identify evidence for or against the claim from within the evidence text.
+Supporting/refuting evidence is defined like this for the purpose of this task: If I was given only the selected sentences, do I have stronger reason to believe claim is true (supported) or stronger reason to believe the claim is false (refuted).
+Please answer in the following way:
+
+LABEL (SUPPORTED if the claim is supported by the evidence, REFUTED if the claim is refuted by the evidence or NOT ENOUGH INFO if there is no sufficient evidence)
+Comma separated number(s) of the sentence(s) that are required to come to this decision
+
+Stick to this format, do not answer with anything else. If a single sentence is enough evidence on its own, giving one number is enough. If multiple are needed, multiple numbers should be given. Example output would be:
+
+SUPPORTED
+1, 3 
+
+or:
+
+REFUTED
+5
+
+---
+YOUR TASK IS:
+
+CLAIM: Tesla, Inc. was not formerly called Telsa Motors.
+1: Tesla , Inc. -LRB- formerly named Tesla Motors -RRB- is a major American automaker , energy storage company , and solar panel manufacturer based in Palo Alto , California .
+2: The company was initially founded in 2003 by Martin Eberhard and Marc Tarpenning , although the company also considers Elon Musk , JB Straubel , and Ian Wright amongst its co-founders .
+3: The company specializes in electric cars , Lithium-ion battery energy storage , and , through their SolarCity subsidiary , residential solar panels .
+4: Tesla first gained widespread attention following its production of the Tesla Roadster , the first electric sports car , in 2008 .
+5: The company 's second vehicle , the Model S , an electric luxury sedan , debuted in 2012 and is built at the Tesla Factory in California .
+6: The Model S has been the world 's best-selling plug-in electric car for two years in a row , 2015 and 2016 .
+7: Its global sales achieved the 150,000 unit milestone in November 2016 , four years and five months after its introduction .
+8: , the Model S ranks as the world 's all-time second best-selling plug-in after the Nissan Leaf .
+9: The Model S was then followed in September 2015 by the Model X , a crossover SUV .
+10: Tesla 's next vehicle is the Model 3 , which was unveiled in March 2016 .
+11: It is slated for release in 2017 with a base price of , before any government incentives .
+12: , Tesla has sold over 186,000 electric cars worldwide since delivery of its first Tesla Roadster in 2008 , making the carmaker the second largest global pure electric car manufacturer after the Renault-Nissan Alliance .
+13: For two years running , 2015 and 2016 , Tesla ranked as the world 's second best selling manufacturer of plug-in electric cars after BYD Auto .
+14: Musk , the CEO , has said that he envisions Tesla as a technology company and independent automaker , aimed at eventually offering electric cars at prices affordable to the average consumer .
+15: Tesla has a network of high-powered Superchargers located across North America , Europe and Asia for Tesla vehicles .
+16: The company also operates a Destination Charging program , under which shops , restaurants and other venues are offered fast chargers for their customers .
+17: Although Tesla operates a number of production and assembly plants , the company 's most iconic facility is the Gigafactory 1 near Reno , Nevada , where Panasonic builds 21-70 cells for Tesla batteries .
+18: Tesla also manufactures the Tesla Powerwall , Powerpack batteries , and solar panels -LRB- in varying form factors -RRB- for home and industry applications .
+19: Elon Musk owned 20.8 % stake in the company as of March 2017 .

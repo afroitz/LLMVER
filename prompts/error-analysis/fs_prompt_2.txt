@@ -1,0 +1,45 @@
+You are an annotator in an annotation task for claim verification based on textual evidence, not based on previous/additional knowledge.
+You will be given a claim and an evidence text. The claim is a simple factoid sentence which can be true or false. The evidence text is a numbered list of the sentences of the introductory section of a related Wikipedia page. It may or may not contain supporting or refuting evidence. The purpose of the task is to identify evidence for or against the claim from within the evidence text.
+Supporting/refuting evidence is defined like this for the purpose of this task: If I was given only the selected sentences, do I have stronger reason to believe claim is true (supported) or stronger reason to believe the claim is false (refuted).
+Please answer in the following way:
+
+LABEL (SUPPORTED if the claim is supported by the evidence, REFUTED if the claim is refuted by the evidence or NOT ENOUGH INFO if there is no sufficient evidence)
+Comma separated number(s) of the sentence(s) that are required to come to this decision
+
+Stick to this format, do not answer with anything else. If a single sentence is enough evidence on its own, giving one number is enough. If multiple are needed, multiple numbers should be given. Example output would be:
+
+SUPPORTED
+1, 3 
+
+or:
+
+REFUTED
+5
+
+---
+YOUR TASK IS:
+
+CLAIM: The Houston Rockets have bought two NBA championships.
+1: The Houston Rockets are an American professional basketball team based in Houston , Texas .
+2: The Rockets compete in the National Basketball Association -LRB- NBA -RRB- , as a member of the league 's Western Conference Southwest Division .
+3: The team plays its home games at the Toyota Center , located in downtown Houston .
+4: The Rockets have won two NBA championships and four Western Conference titles .
+5: The team was established as the San Diego Rockets , an expansion team originally based in San Diego , in 1967 .
+6: In 1971 , the Rockets moved to Houston .
+7: The Rockets won only 15 games in their debut season as a franchise in 1967 .
+8: In the 1968 NBA draft , the Rockets , picking first overall , selected power forward Elvin Hayes , who would lead the team to its first playoff appearance in his rookie season .
+9: The Rockets did not finish a season with a winning record until the 1976 -- 77 season , when they traded for center Moses Malone .
+10: Malone went on to win the NBA Most Valuable Player -LRB- MVP -RRB- award twice and led Houston to the conference finals in his first year with the team .
+11: He also led the Rockets to the NBA Finals in 1981 where they were defeated in six games by the Boston Celtics , led by Larry Bird and future Rockets coach Kevin McHale .
+12: In 1984 , the Rockets drafted center Hakeem Olajuwon , who would be paired with 7 ft Ralph Sampson , forming one of the tallest front courts in the NBA .
+13: Nicknamed the `` Twin Towers '' , they led the team to the 1986 NBA Finals -- the second NBA Finals appearance in franchise history -- where Houston was again defeated by the Boston Celtics .
+14: The Rockets continued to reach the playoffs throughout the 1980s , but failed to advance past the first round for several years following a second-round defeat to the Seattle SuperSonics in 1987 .
+15: Rudy Tomjanovich took over as head coach midway through the 1991 -- 92 season , ushering in the most successful period in franchise history .
+16: Olajuwon-led Rockets went to the 1994 NBA Finals and won franchise 's first championship against Patrick Ewing and the New York Knicks .
+17: The following season , the Rockets reinforced by another All-Star , Clyde Drexler , repeated as champions as the sixth seed in the West and swept the Orlando Magic , led by a young Shaquille O'Neal and Penny Hardaway , in four games .
+18: Houston became the lowest-seeded team in NBA history to win the title .
+19: The Rockets acquired all-star forward Charles Barkley in 1996 , but the presence of three of the NBA 's 50 greatest players of all-time -LRB- Olajuwon , Drexler , and Barkley -RRB- was not enough to propel Houston past the Western Conference Finals .
+20: Each one of the aging trio had left the team by 2001 , and the Rockets of the early 21st century , led by superstars Tracy McGrady and Yao Ming , followed the trend of consistent regular-season respectability followed by playoff underachievement as both players struggled with injuries .
+21: After Yao 's early retirement in 2011 , the Rockets entered a period of rebuilding , completely dismantling and retooling their roster .
+22: The acquisition of franchise player James Harden in 2012 has launched the Rockets back into championship contention in the mid-2010s .
+23: The Rockets , under general manager Daryl Morey , are notable for popularizing the use of advanced statistical analytics -LRB- similar to sabermetrics in baseball -RRB- in player acquisitions and style of play .

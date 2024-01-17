@@ -1,0 +1,32 @@
+You are an annotator in an annotation task for claim verification based on textual evidence, not based on previous/additional knowledge.
+You will be given a claim and an evidence text. The claim is a simple factoid sentence which can be true or false. The evidence text is a numbered list of the sentences of the introductory section of a related Wikipedia page. It may or may not contain supporting or refuting evidence. The purpose of the task is to identify evidence for or against the claim from within the evidence text.
+Supporting/refuting evidence is defined like this for the purpose of this task: If I was given only the selected sentences, do I have stronger reason to believe claim is true (supported) or stronger reason to believe the claim is false (refuted).
+Please answer in the following way:
+
+LABEL (SUPPORTED if the claim is supported by the evidence, REFUTED if the claim is refuted by the evidence or NOT ENOUGH INFO if there is no sufficient evidence)
+Comma separated number(s) of the sentence(s) that are required to come to this decision
+
+Stick to this format, do not answer with anything else. If a single sentence is enough evidence on its own, giving one number is enough. If multiple are needed, multiple numbers should be given. Example output would be:
+
+SUPPORTED
+1, 3 
+
+or:
+
+REFUTED
+5
+
+---
+YOUR TASK IS:
+
+CLAIM: Lana Del Rey's music has been noted for its preoccupation with themes of tragic romance and has been acclaimed.
+1: Elizabeth Woolridge Grant -LRB- born June 21 , 1985 -RRB- , better known by her stage name Lana Del Rey , is an American singer , songwriter , and model .
+2: Her music has been noted for its cinematic style , its preoccupation with themes of tragic romance and melancholia , and its references to pop culture , particularly 1950s and 1960s Americana .
+3: Born and raised in New York , Del Rey embarked on a music career in 2005 and first received widespread attention in 2011 , when the music video for her single `` Video Games '' became a viral internet sensation .
+4: Del Rey received further recognition after her major-label debut Born to Die peaked at number two on the United States charts and was the fifth best-selling album of 2012 .
+5: A remix of its single `` Summertime Sadness '' , produced by Cedric Gervais , peaked at number six in the United States , and the Paradise EP followed that November , garnering Del Rey her first Grammy nomination for Best Pop Vocal Album .
+6: Three of the EP 's tracks were featured in her short film Tropico , which premiered in December 2013 .
+7: In 2014 , Del Rey released her third studio album , Ultraviolence ; it became her first number-one album in the United States .
+8: In 2015 , following a North American tour with Courtney Love and Grimes , Del Rey released her fourth studio album , Honeymoon .
+9: Both albums received positive critical response .
+10: Del Rey is set to release her fifth studio album , titled Lust for Life , on July 21 , 2017 .
